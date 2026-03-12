@@ -26,6 +26,8 @@ spec:
               value: "myuser"
             - name: RABBITMQ_DEFAULT_PASS
               value: "mypassword"
+            - name: RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS
+              value: '-rabbitmq_management path_prefix "/rabbitmq"'
           resources:
             requests:
               memory: "256Mi"
